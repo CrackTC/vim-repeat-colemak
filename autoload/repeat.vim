@@ -152,13 +152,13 @@ if !hasmapto('<Plug>(RepeatDot)', 'n')
     nmap . <Plug>(RepeatDot)
 endif
 if !hasmapto('<Plug>(RepeatUndo)', 'n')
-    nmap u <Plug>(RepeatUndo)
+    nmap l <Plug>(RepeatUndo)
 endif
 if maparg('U','n') ==# '' && !hasmapto('<Plug>(RepeatUndoLine)', 'n')
-    nmap U <Plug>(RepeatUndoLine)
+    nmap L <Plug>(RepeatUndoLine)
 endif
 if !hasmapto('<Plug>(RepeatRedo)', 'n')
-    nmap <C-R> <Plug>(RepeatRedo)
+    nmap <C-P> <Plug>(RepeatRedo)
 endif
 
 augroup repeatPlugin
